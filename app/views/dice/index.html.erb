@@ -2,7 +2,13 @@
 
 <% die1=rand(1..6)%>
 <%= "Die one is #{die1}." %>
+<img src="/images/dice/<%= die1 %>.svg" alt="image of die">
+<br>
 <% die2=rand(1..6)%>
 <%= "Die two is #{die2}." %>
+<img src="/images/dice/<%= die2 %>.svg" alt="image of die">
+<br>
 <%total=die1+die2%>
 <%= "The total is #{total}" %>
+<br>
+<a href="/dice"> Roll again </a>
